@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application22</string>
+    <string name="taem">Taem</string>
+    <string name="boston_celtics">Boston Celtics</string>
+    <string name="brooklynnets">BrooklynNets</string>
+    <string name="toronto_raptors">Toronto Raptors</string>
+    <string name="charlotte_hornets">Charlotte Hornets</string>
+</resources>
