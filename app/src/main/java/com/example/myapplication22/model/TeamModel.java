@@ -13,6 +13,8 @@ public class TeamModel {
 
     public String getInfoTeam() {
         return InfoTeam;
+
+
     }
 
     public void setInfoTeam(String infoTeam) {
