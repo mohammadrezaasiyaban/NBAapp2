@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@drawable/hiu">
-
+    android:background="@drawable/backgerand">
 
 
     <LinearLayout
@@ -18,7 +17,6 @@
         android:orientation="vertical">
 
         <FrameLayout
-            android:background="#1a1a1a"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:paddingStart="12dp"
@@ -40,52 +38,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-
-        <ImageView
-            android:id="@+id/taem2tow"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:layout_marginStart="216dp"
-            android:layout_marginTop="96dp"
-            android:src="@drawable/brooklyn_nets"
-            android:textSize="20sp"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_teams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/taem1one"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="96dp"
-            android:src="@drawable/boston_celtics"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/taem4four"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:layout_marginStart="212dp"
-            android:layout_marginTop="376dp"
-            android:src="@drawable/charalotte_homets"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/taem3tery"
-            android:layout_width="180dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="376dp"
-            android:src="@drawable/mnbv"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
+            android:layout_margin="8dp"
+            tools:listitem="@layout/teams_row_lavout"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </LinearLayout>

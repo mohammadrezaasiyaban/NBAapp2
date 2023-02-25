@@ -5,4 +5,7 @@
     <string name="brooklynnets">BrooklynNets</string>
     <string name="toronto_raptors">Toronto Raptors</string>
     <string name="charlotte_hornets">Charlotte Hornets</string>
+    <string name="names">names</string>
+    <string name="test">test</string>
+    <string name="teams">Teams</string>
 </resources>
